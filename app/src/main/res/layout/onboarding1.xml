@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_on_boarding_1"
-    tools:context=".onboarding1">
+    tools:context=".Onboarding1">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ilustration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/image_on_boarding_1"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/heading"
@@ -27,6 +27,7 @@
         app:layout_constraintTop_toBottomOf="@id/ilustration"/>
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginTop="20dp"
         android:id="@+id/isi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,11 +45,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/isi" />
-    <Button
-        android:background="@drawable/button"
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:background= "@drawable/button"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
