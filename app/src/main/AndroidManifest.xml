@@ -19,6 +19,9 @@
             android:name=".homepage"
             android:exported="false" />
         <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
             android:name=".onboarding3"
             android:exported="false" />
         <activity
