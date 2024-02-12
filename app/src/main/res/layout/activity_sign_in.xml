@@ -48,17 +48,35 @@
             app:layout_constraintRight_toRightOf="parent"
             android:textColor="@color/white"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="20dp"
             tools:layout_editor_absoluteY="118dp" />
-        
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
+            <Button
+                android:id="@+id/lgn_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_btn"
+                android:textSize="20dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputEditText
