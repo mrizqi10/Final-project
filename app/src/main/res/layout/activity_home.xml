@@ -112,7 +112,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card1"
@@ -174,6 +174,128 @@
 
 
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:background="@drawable/rounded_button"
+                android:padding="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@id/card1"
+                tools:ignore="MissingConstraints">
+
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mask"
+                    android:layout_marginTop="15dp"
+
+                <TextView
+                    android:id="@+id/titleTextView3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="10sp"
+                    android:text="Vegetable mix"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subtitleTextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="65dp"
+                    android:text="260 kcal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/subtitleTextView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="90sp"
+                    android:layout_marginTop="65dp"
+                    android:text="View More>"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/kalori2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="65dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:background="@drawable/rounded_button"
+                android:padding="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@id/card2"
+                tools:ignore="MissingConstraints">
+
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mask"
+                    android:layout_marginTop="15dp"
+
+                <TextView
+                    android:id="@+id/titleTextView2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="10sp"
+                    android:text="Seasonal salad"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subtitleTextView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="65dp"
+                    android:text="120 kcal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/subtitleTextView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="90sp"
+                    android:layout_marginTop="65dp"
+                    android:text="View More>"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/kalori3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="65dp"/>
+
+
+            </androidx.cardview.widget.CardView
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
