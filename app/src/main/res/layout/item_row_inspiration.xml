@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/photo1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/photo"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="15dp"
+            android:text="Seasonal salad"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitleTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="40dp"
+            android:text="Nunc fringilla, nibh ac malesu."
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/subtitleTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220sp"
+            android:layout_marginTop="62dp"
+            android:text="View More>"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/kalori2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kal"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/subtitleTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130sp"
+            android:layout_marginTop="60dp"
+            android:text="120 kcal"
+            android:textSize="14sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/item1"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/photo2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/baked2png"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/titleTextView2"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="15dp"
+            android:text="Baked salmon and asparagus"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitleTextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="40dp"
+            android:text="Duis vestibulum risus nec sem auctor."
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/subtitleTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220sp"
+            android:layout_marginTop="62dp"
+            android:text="View More>"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/kalori3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kal"
+            android:layout_marginStart="110sp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/subtitleTextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130sp"
+            android:layout_marginTop="60dp"
+            android:text="190 kcal"
+            android:textSize="14sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
