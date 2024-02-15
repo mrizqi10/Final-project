@@ -16,7 +16,7 @@
         android:layout_height="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <!-- Home Text -->
 
@@ -101,6 +101,53 @@
     <!-- Scroll View -->
 
     <!-- Food Card 1 -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/foodCard1"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView">
+
+        <ImageView
+            android:id="@+id/foodImage1"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/salad" />
+
+        <TextView
+            android:id="@+id/foodName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Healthy food for you"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foodCalories1"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="Etiam in ex nec lobortis food luctus. Etiam iaculis healthy."
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:text="See all food"
+            android:background="@drawable/rounded_button_hijau"/>
+
+    </androidx.cardview.widget.CardView>
 
     <HorizontalScrollView
         android:id="@+id/listmenu"
@@ -193,7 +240,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:src="@drawable/mask"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="15dp"/>
 
                 <TextView
                     android:id="@+id/titleTextView3"
@@ -254,7 +301,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:src="@drawable/mask"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="15dp"/>
 
                 <TextView
                     android:id="@+id/titleTextView2"
@@ -297,58 +344,13 @@
                     android:layout_marginTop="65dp"/>
 
 
-            </androidx.cardview.widget.CardView
+            </androidx.cardview.widget.CardView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </HorizontalScrollView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/foodCard1"
-        android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_marginTop="16dp"
-        app:cardCornerRadius="8dp"
-        android:background="@color/gray"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchView">
-
-        <ImageView
-            android:id="@+id/foodImage1"
-            android:layout_width="131dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="end"
-            android:src="@drawable/salad" />
-
-        <TextView
-            android:id="@+id/foodName1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Healthy food for you"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/foodCalories1"
-            android:layout_width="186dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="16dp"
-            android:text="Etiam in ex nec lobortis food luctus. Etiam iaculis healthy."
-            android:textColor="@color/black" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="158dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_margin="16dp"
-            android:text="See all food"
-            android:background="@drawable/rounded_button_hijau"/>
-
-    </androidx.cardview.widget.CardView>
 
 
+</androidx.constraintlayout.widget.ConstraintLayout>
