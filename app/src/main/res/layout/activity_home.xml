@@ -18,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-
     <!-- Home Text -->
 
 
@@ -99,33 +98,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints" />
 
-    <!-- Text -->
-
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:text="Popular"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/listmenu"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
-
-    <!-- list Menu Food -->
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_inspiration"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="8dp"
-        android:nestedScrollingEnabled="false"
-        app:layout_constraintTop_toBottomOf="@id/text3"
-        tools:listitem="@layout/item_row_inspiration"
-        tools:ignore="MissingConstraints" />
-
     <!-- Scroll View -->
 
     <!-- Food Card 1 -->
@@ -140,7 +112,6 @@
         android:padding="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/scrollView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -222,7 +193,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:src="@drawable/mask"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"
 
                 <TextView
                     android:id="@+id/titleTextView3"
@@ -282,8 +253,8 @@
                     android:id="@+id/image3"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:src="@drawable/image2"
-                    android:layout_marginTop="15dp"/>
+                    android:src="@drawable/mask"
+                    android:layout_marginTop="15dp"
 
                 <TextView
                     android:id="@+id/titleTextView2"
@@ -326,8 +297,7 @@
                     android:layout_marginTop="65dp"/>
 
 
-            </androidx.cardview.widget.CardView>
-
+            </androidx.cardview.widget.CardView
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -379,10 +349,6 @@
             android:text="See all food"
             android:background="@drawable/rounded_button_hijau"/>
 
-
-
     </androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 
