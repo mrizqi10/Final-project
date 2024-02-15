@@ -3,9 +3,9 @@ package com.kodulersfittasa
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class sign_in : AppCompatActivity() {
+class log_in : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_in)
+        setContentView(R.layout.activity_log_in)
     }
 }
