@@ -17,21 +17,26 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <TextView
         android:id="@+id/heading"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/heading_text_1"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Maintain Your Daily Food"
+        android:textSize="45dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ilustration"/>
+        app:layout_constraintTop_toBottomOf="@id/ilustration" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_marginTop="20dp"
+    <TextView
+        android:layout_marginTop="15dp"
         android:id="@+id/isi"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/gray"
         android:layout_height="wrap_content"
-        android:background="@drawable/isi_heading_1"
+        android:textSize="20dp"
+        android:text="Transform your lifestyle, one bite at a time. Welcome to HealthHub, where healthy habits meet achievable goals."
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/heading"/>
@@ -40,15 +45,17 @@
         android:id="@+id/slider_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/slider_1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/isi" />
-    <ImageButton
+
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background= "@drawable/button"
+        android:layout_height="40dp"
+        android:background= "@drawable/bg1_rounded_hijau1"
+        android:text="Next"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
