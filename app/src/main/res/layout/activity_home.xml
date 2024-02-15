@@ -97,6 +97,30 @@
         app:layout_constraintTop_toBottomOf="@id/foodCard1"
         tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Popular"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/listmenu"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- List menu food -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_inspiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        tools:listitem="@layout/item_row_inspiration" />
+
 
     <!-- Scroll View -->
 
@@ -193,7 +217,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:src="@drawable/mask"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="15dp"/>
 
                 <TextView
                     android:id="@+id/titleTextView3"
@@ -254,7 +278,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:src="@drawable/mask"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="15dp"/>
 
                 <TextView
                     android:id="@+id/titleTextView2"
@@ -297,7 +321,7 @@
                     android:layout_marginTop="65dp"/>
 
 
-            </androidx.cardview.widget.CardView
+            </androidx.cardview.widget.CardView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -350,5 +374,7 @@
             android:background="@drawable/rounded_button_hijau"/>
 
     </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
