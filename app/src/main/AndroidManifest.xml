@@ -21,8 +21,8 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/Theme.Fittasa.NoActionBar" />
         <activity
-            android:name=".sign_in1"
-            android:exported="false" />
+            android:name=".SignUpActivity"
+            android:exported="true " />
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false"
@@ -48,6 +48,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <action android:name="android.intent.categor.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>

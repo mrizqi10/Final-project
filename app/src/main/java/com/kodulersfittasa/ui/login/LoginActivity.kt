@@ -19,12 +19,12 @@ import com.kodulersfittasa.R
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var loginViewModel: LoginViewModel
-    private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivityLogInBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityLogInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val username = binding.username

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sign_in1">
+    tools:context=".SignUpActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
     android:id="@+id/imageSign_in"
@@ -80,9 +80,10 @@
             android:background="@drawable/bg5_rounded_putih"/>
 
         <Button
+            android:id="@+id/button_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Sign Up"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txtbx_confirm_password"
