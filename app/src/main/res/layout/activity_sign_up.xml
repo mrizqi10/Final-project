@@ -144,7 +144,7 @@
             android:textSize="18sp"
             />
 
-        <View
+        <TextView
             android:id="@+id/signup_with"
             android:background="@drawable/signup_with"
             android:layout_width="291.3dp"
@@ -158,6 +158,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/buttons"
             android:contextClickable="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginStart="165dp"
             android:layout_marginTop="530dp"/>
 
