@@ -91,7 +91,8 @@
         android:textColor="@color/solutions_to__diet__color"
         android:textSize="13.54sp"
         app:layout_constraintTop_toBottomOf="@id/button2"
-        tools:layout_editor_absoluteX="36dp" />
+        tools:layout_editor_absoluteX="36dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

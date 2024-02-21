@@ -15,82 +15,155 @@
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:paddingHorizontal="30dp"
+    <RelativeLayout
         android:id="@+id/constraint"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/bg1_halfrounded_hijau1">
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt_welcome"
+        <TextView
+            android:id="@+id/get_started_free"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="35dp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/constraint"
-            android:text="Get Started Free!"
-            android:textSize="38dp"
-            android:textColor="@color/white"/>
+            android:text="Get Started Free"
+            />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt_under_welcome"
+        <TextView
+            android:id="@+id/teks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
             android:text="Free Forever. No Credit Card Needed"
-            android:textSize="15sp"
-            app:layout_constraintTop_toBottomOf="@id/txt_welcome"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="6dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/teks_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="145dp"
+            android:gravity="center"
+            android:text="Email Adress"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
 
         <EditText
             android:id="@+id/txtbx_email"
-            android:layout_width="match_parent"
-            android:layout_marginTop="40dp"
-            android:hint="  Yourname@mail.com"
-            android:inputType="textEmailAddress"
-            android:layout_height="52dp"
-            android:selectAllOnFocus="true"
-            app:layout_constraintTop_toBottomOf="@id/txt_under_welcome"
-            android:background="@drawable/bg5_rounded_putih"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/email"
+            android:hint="✉️    yourname@gmail.com"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="180dp"
+            android:textAllCaps="false"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="32dp"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:id="@+id/teks_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="245dp"
+            android:gravity="center"
+            android:text="Password"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
 
         <EditText
             android:id="@+id/txtbx_password"
-            android:layout_width="match_parent"
-            android:layout_marginTop="50dp"
-            android:hint="  Password"
-            android:layout_height="52dp"
-            android:inputType="textPassword"
-            app:layout_constraintTop_toBottomOf="@id/txtbx_email"
-            android:background="@drawable/bg5_rounded_putih"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/email"
+            android:hint="🔑️    ..............."
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="280dp"
+            android:textAllCaps="false"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="32dp"
+            android:elevation="8dp" />
+
+        <TextView
+            android:id="@+id/teks_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="345dp"
+            android:gravity="center"
+            android:text="Confirm Password"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
 
         <EditText
             android:id="@+id/txtbx_confirm_password"
-            android:layout_width="match_parent"
-            android:layout_marginTop="50dp"
-            android:hint="  Confirm Password"
-            android:layout_height="52dp"
-            android:inputType="textPassword"
-            app:layout_constraintTop_toBottomOf="@id/txtbx_password"
-            android:background="@drawable/bg5_rounded_putih"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/email"
+            android:hint="🔑️    ..............."
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="380dp"
+            android:textAllCaps="false"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="32dp"
+            android:elevation="8dp" />
 
         <Button
             android:id="@+id/button_signup"
+            android:layout_width="280dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="450dp"
+            android:layout_height="50dp"
+            android:background="@drawable/linear"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:id="@+id/signup_with"
+            android:background="@drawable/signup_with"
+            android:layout_width="291.3dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="510dp"/>
+
+        <ImageView
+            android:id="@+id/google"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtbx_confirm_password"
-            android:layout_marginTop="50dp"/>
+            android:src="@drawable/buttons"
+            android:contextClickable="true"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="530dp"/>
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
