@@ -1,5 +1,6 @@
 package com.kodulersfittasa.ui.login
 
+
 /**
  * Authentication result : success (user details) or error message.
  */

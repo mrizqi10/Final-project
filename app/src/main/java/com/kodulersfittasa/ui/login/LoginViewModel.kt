@@ -4,10 +4,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
+import com.google.firebase.auth.FirebaseAuth
 import com.kodulersfittasa.data.LoginRepository
 import com.kodulersfittasa.data.Result
-
 import com.kodulersfittasa.R
+
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
 
