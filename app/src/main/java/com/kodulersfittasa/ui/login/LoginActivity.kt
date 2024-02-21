@@ -19,18 +19,18 @@ import com.kodulersfittasa.R
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var loginViewModel: LoginViewModel
-    private lateinit var binding: ActivityLogInBinding
+    private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityLogInBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = binding.username
-        val password = binding.password
+        val username = binding.email
+        val password = binding.txtbxPassword
         val login = binding.login
-        val loading = binding.loading
+//        val loading = binding.loading
 
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
@@ -52,13 +52,13 @@ class LoginActivity : AppCompatActivity() {
         loginViewModel.loginResult.observe(this@LoginActivity, Observer {
             val loginResult = it ?: return@Observer
 
-            loading.visibility = View.GONE
+//            loading.visibility = View.GONE
             if (loginResult.error != null) {
                 showLoginFailed(loginResult.error)
             }
-            if (loginResult.success != null) {
-                updateUiWithUser(loginResult.success)
-            }
+//            if (loginResult.success != null) {
+//                updateUiWithUser(loginResult.success)
+//            }
             setResult(Activity.RESULT_OK)
 
             //Complete and destroy login activity once successful
@@ -92,22 +92,22 @@ class LoginActivity : AppCompatActivity() {
             }
 
             login.setOnClickListener {
-                loading.visibility = View.VISIBLE
+//                loading.visibility = View.VISIBLE
                 loginViewModel.login(username.text.toString(), password.text.toString())
             }
         }
     }
 
-    private fun updateUiWithUser(model: LoggedInUserView) {
-        val welcome = getString(R.string.welcome)
-        val displayName = model.displayName
-        // TODO : initiate successful logged in experience
-        Toast.makeText(
-            applicationContext,
-            "$welcome $displayName",
-            Toast.LENGTH_LONG
-        ).show()
-    }
+//    private fun updateUiWithUser(model: LoggedInUserView) {
+//        val welcome = getString(R.string.welcome)
+//        val displayName = model.displayName
+//        // TODO : initiate successful logged in experience
+//        Toast.makeText(
+//            applicationContext,
+//            "$welcome $displayName",
+//            Toast.LENGTH_LONG
+//        ).show()
+//    }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
         Toast.makeText(applicationContext, errorString, Toast.LENGTH_SHORT).show()
