@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".before_register">
+
+    <TextView
+        android:id="@+id/teks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solutions_to__diet__string"
+        android:textColor="@color/solutions_to__diet__color"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/all_that_you_need__all_that_you_want_just_here_at_all_"
+        android:layout_width="392.04041053772dp"
+        android:layout_height="161.87041053772dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="All that you need, All that you want just here at all!"
+        android:textColor="@color/black"
+        android:textSize="38.7sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/teks"
+        tools:layout_editor_absoluteX="9dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/line_chart"
+        android:layout_width="453dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/line_chart"
+        app:layout_constraintTop_toBottomOf="@id/all_that_you_need__all_that_you_want_just_here_at_all_"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/salad"
+        android:layout_width="224dp"
+        android:layout_height="226.72dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/salad2"
+        app:layout_constraintTop_toBottomOf="@id/all_that_you_need__all_that_you_want_just_here_at_all_"
+        tools:layout_editor_absoluteX="93dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="@string/button_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salad" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="280dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background2"
+        android:text="@string/button_text2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <TextView
+        android:id="@+id/by_proceeding__i_accept_the_healthhub_service_and_confirm_that_i_have_read_plash_privacy_policy__link_in_the_app_are_sponsored_"
+        android:layout_width="339.35379371643dp"
+        android:layout_height="51.353793716431dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="By proceeding. I accept the HealthHub Service and confirm that i have read Plash Privacy Policy. Link in the app are sponsored."
+        android:textColor="@color/solutions_to__diet__color"
+        android:textSize="13.54sp"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        tools:layout_editor_absoluteX="36dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

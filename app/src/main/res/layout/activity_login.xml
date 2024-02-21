@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/loading"
     android:layout_height="match_parent"
     tools:context=".login">
 
@@ -25,7 +26,7 @@
         android:background="@drawable/bg1_halfrounded_hijau1">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt_welcome"
+            android:id="@+id/welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -42,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="welcome back we missed you!"
             android:textSize="15sp"
-            app:layout_constraintTop_toBottomOf="@id/txt_welcome"
+            app:layout_constraintTop_toBottomOf="@id/welcome"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="6dp"
             app:layout_constraintRight_toRightOf="parent"
