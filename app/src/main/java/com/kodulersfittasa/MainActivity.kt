@@ -10,7 +10,7 @@ import com.kodulersfittasa.databinding.Onboarding1Binding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_splash_screen)
 
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, Onboarding1Binding::class.java)
