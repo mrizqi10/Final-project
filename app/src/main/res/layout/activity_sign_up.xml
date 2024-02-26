@@ -149,7 +149,7 @@
             android:background="@drawable/signup_with"
             android:layout_width="291.3dp"
             android:layout_height="16dp"
-            android:layout_marginStart="55dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="510dp"/>
 
         <ImageView
@@ -159,7 +159,6 @@
             android:src="@drawable/buttons"
             android:contextClickable="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="165dp"
             android:layout_marginTop="530dp"/>
 
 
