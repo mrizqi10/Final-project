@@ -7,7 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import com.kodulersfittasa.databinding.Onboarding1Binding
 
-class MainActivity : AppCompatActivity() {
+class Splash_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
