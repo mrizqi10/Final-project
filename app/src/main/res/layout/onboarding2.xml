@@ -7,6 +7,11 @@
     android:background="@drawable/background_on_boarding_1"
     tools:context=".onboarding2">
 
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ilustration"
         android:layout_width="wrap_content"
