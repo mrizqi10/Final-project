@@ -55,7 +55,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_login"
         android:layout_width="280dp"
         android:layout_marginTop="15dp"
         android:layout_height="50dp"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@id/salad" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_sign_in"
         android:layout_width="280dp"
         android:layout_marginTop="10dp"
         android:layout_height="50dp"
@@ -78,7 +78,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button" />
+        app:layout_constraintTop_toBottomOf="@id/button_login" />
 
     <TextView
         android:id="@+id/by_proceeding__i_accept_the_healthhub_service_and_confirm_that_i_have_read_plash_privacy_policy__link_in_the_app_are_sponsored_"
@@ -90,7 +90,7 @@
         android:text="By proceeding. I accept the HealthHub Service and confirm that i have read Plash Privacy Policy. Link in the app are sponsored."
         android:textColor="@color/solutions_to__diet__color"
         android:textSize="13.54sp"
-        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/button_sign_in"
         tools:layout_editor_absoluteX="36dp"
         tools:ignore="MissingConstraints" />
 

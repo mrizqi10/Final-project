@@ -21,33 +21,16 @@
             android:name=".Profile"
             android:exported="false" />
         <activity
-            android:name=".Profile2"
-            android:exported="false"
-            android:label="@string/title_activity_profile2"
-            android:theme="@style/Theme.Fittasa.NoActionBar" />
-        <activity
-            android:name=".profile"
-            android:exported="false" />
-        <activity
             android:name=".detail_makanan"
             android:exported="false" />
         <activity
-            android:name=".ScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.Fittasa.NoActionBar" />
-        <activity
             android:name=".SignUpActivity"
-            android:exported="true " />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".homepage"
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".login"
             android:exported="false" />
         <activity
             android:name=".home"
