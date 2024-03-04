@@ -2,6 +2,7 @@ package com.kodulersfittasa
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,5 +14,12 @@ class ProfileActivity : AppCompatActivity() {
         val protein = intent.getFloatExtra("protein", 0f)
 
 // Now you can use these values in your ProfileActivity
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> finish()
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }

@@ -44,6 +44,7 @@
     </androidx.appcompat.widget.Toolbar>
 
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/foodCard1"
         android:layout_width="382dp"
@@ -54,6 +55,8 @@
         app:cardCornerRadius="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/_bg__header">
+
+
 
         <TextView
             android:id="@+id/foodName1"
@@ -295,5 +298,6 @@
             android:textSize="30sp" />
 
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
