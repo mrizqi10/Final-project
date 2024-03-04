@@ -1,44 +1,51 @@
 package com.kodulersfittasa
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.os.Parcel
+import android.os.Parcelable
 import com.kodulersfittasa.databinding.Onboarding1Binding
 
-class Onboarding1 : AppCompatActivity() {
-    private var currentFragment: Fragment? = null
+class Onboarding1() : AppCompatActivity(), Parcelable {
+    private lateinit var binding: Onboarding1Binding
+
+    constructor(parcel: Parcel) : this() {
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.onboarding1)
+        binding = Onboarding1Binding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        doLogin()
 
     }
 
-    private fun loadFragment(fragment: OnboardingFragment1) {
-        if (currentFragment != null) {
-            supportFragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left)
-                .replace(R.id.fragment_container, fragment)
-                .commit()
-        } else {
-            supportFragmentManager.beginTransaction()
-                .add(R.id.fragment_container, fragment)
-                .commit()
+    private fun doLogin() {
+        binding.buttonNext.setOnClickListener{
+            startActivity(Intent(this,onboarding2::class.java))
         }
-        currentFragment = fragment
     }
 
-    fun nextFragment(nextFragment: Fragment?) {
-        if (nextFragment != null) {
-            supportFragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.slide_out_left, R.anim.slide_in_right)
-                .replace(R.id.fragment_container, nextFragment)
-                .commit()
+    override fun describeContents(): Int {
+        TODO("Not yet implemented")
+    }
+
+    override fun writeToParcel(dest: Parcel, flags: Int) {
+        TODO("Not yet implemented")
+    }
+
+    companion object CREATOR : Parcelable.Creator<Onboarding1> {
+        override fun createFromParcel(parcel: Parcel): Onboarding1 {
+            return Onboarding1(parcel)
         }
-        currentFragment = nextFragment
 
+        override fun newArray(size: Int): Array<Onboarding1?> {
+            return arrayOfNulls(size)
+        }
     }
-
 }
-
-
