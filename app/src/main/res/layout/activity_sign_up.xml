@@ -47,11 +47,11 @@
             android:textSize="15sp"/>
 
         <TextView
-            android:id="@+id/teks_email"
+            android:id="@+id/teks_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="145dp"
+            android:layout_marginTop="245dp"
             android:gravity="center"
             android:text="Email Adress"
             android:fontFamily="@font/poppins_medium"
@@ -61,7 +61,7 @@
 
 
         <EditText
-            android:id="@+id/txtbx_email"
+            android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -77,11 +77,41 @@
             android:elevation="8dp"/>
 
         <TextView
+            android:id="@+id/tx_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="145dp"
+            android:gravity="center"
+            android:text="Name"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/email"
+            android:hint="✉️    youremail@gmail.com"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="280dp"
+            android:textAllCaps="false"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="32dp"
+            android:elevation="8dp"/>
+
+        <TextView
             android:id="@+id/teks_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="245dp"
+            android:layout_marginTop="345dp"
             android:gravity="center"
             android:text="Password"
             android:fontFamily="@font/poppins_medium"
@@ -98,7 +128,7 @@
             android:hint="🔑️    ..............."
             android:textColorHint="@color/white"
             android:textColor="@color/white"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="380dp"
             android:textAllCaps="false"
             android:paddingVertical="16dp"
             android:paddingHorizontal="32dp"
@@ -109,7 +139,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="345dp"
+            android:layout_marginTop="445dp"
             android:gravity="center"
             android:text="Confirm Password"
             android:fontFamily="@font/poppins_medium"
@@ -126,7 +156,7 @@
             android:hint="🔑️    ..............."
             android:textColorHint="@color/white"
             android:textColor="@color/white"
-            android:layout_marginTop="380dp"
+            android:layout_marginTop="480dp"
             android:textAllCaps="false"
             android:paddingVertical="16dp"
             android:paddingHorizontal="32dp"
@@ -136,7 +166,7 @@
             android:id="@+id/button_signup"
             android:layout_width="280dp"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="450dp"
+            android:layout_marginTop="550dp"
             android:layout_height="50dp"
             android:background="@drawable/linear"
             android:text="Sign up"
@@ -144,22 +174,20 @@
             android:textSize="18sp"
             />
 
-        <TextView
-            android:id="@+id/signup_with"
-            android:background="@drawable/signup_with"
-            android:layout_width="291.3dp"
-            android:layout_height="16dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="510dp"/>
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="280dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="600dp"
+            android:layout_height="50dp"
+            android:background="@drawable/linear"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
 
-        <ImageView
-            android:id="@+id/google"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/buttons"
-            android:contextClickable="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="530dp"/>
+
+
 
 
 
