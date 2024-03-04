@@ -1,8 +1,10 @@
 package com.kodulersfittasa
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import com.kodulersfittasa.databinding.ActivityHomeBinding
 
 class home : AppCompatActivity() {
@@ -15,5 +17,9 @@ class home : AppCompatActivity() {
         setContentView(view)
 
         setSupportActionBar(binding.toolbar)
+    }
+    fun onMenuClicked(view: View) {
+        val intent = Intent(this, ProfileActivity::class.java)
+        startActivity(intent)
     }
 }

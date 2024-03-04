@@ -44,6 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
+        app:clickable="true"
+        app:onClick="onMenuClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconmenu" />
@@ -61,28 +63,6 @@
         app:srcCompat="@drawable/icontitik" />
 
 
-    <!-- Search View -->
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="383dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_button"
-        android:queryHint="Search"
-        app:iconifiedByDefault="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcomeText">
-
-        <!-- Add a query background to make the search query more visible -->
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/searchAutoComplete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_button" />
-
-    </SearchView>
 
     <!-- Text -->
 
@@ -277,7 +257,7 @@
                     android:id="@+id/image3"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:src="@drawable/mask"
+                    android:src="@drawable/age"
                     android:layout_marginTop="15dp"/>
 
                 <TextView
@@ -336,7 +316,7 @@
         app:cardCornerRadius="8dp"
         android:background="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchView">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <ImageView
             android:id="@+id/foodImage1"
