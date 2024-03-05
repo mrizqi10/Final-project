@@ -18,7 +18,7 @@
             android:name=".before_register"
             android:exported="false" />
         <activity
-            android:name=".Profile"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".detail_makanan"
@@ -26,9 +26,6 @@
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"/>
         <activity
             android:name=".login"
             android:exported="false" />

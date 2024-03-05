@@ -140,7 +140,7 @@
             android:fontFamily="@font/poppins_medium" />
 
         <TextView
-            android:id="@+id/descriptionTextView"
+            android:id="@+id/calories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -188,7 +188,7 @@
             android:fontFamily="@font/poppins_medium" />
 
         <TextView
-            android:id="@+id/descriptionTextView2"
+            android:id="@+id/carbs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -236,7 +236,7 @@
             android:fontFamily="@font/poppins_medium" />
 
         <TextView
-            android:id="@+id/descriptionTextView3"
+            android:id="@+id/fat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -284,7 +284,7 @@
             android:fontFamily="@font/poppins_medium" />
 
         <TextView
-            android:id="@+id/descriptionTextView4"
+            android:id="@+id/protein"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
