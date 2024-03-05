@@ -4,9 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.kodulersfittasa.databinding.ActivityHomeBinding
 import com.kodulersfittasa.databinding.ActivityLoginBinding
-import com.kodulersfittasa.databinding.ActivitySignUpBinding
+
 
 class login : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding

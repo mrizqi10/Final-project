@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kodulersfittasa.databinding.ActivityDetailMakananBinding
-import com.kodulersfittasa.databinding.ActivitySignUpBinding
+
 
 class detail_makanan : AppCompatActivity() {
 

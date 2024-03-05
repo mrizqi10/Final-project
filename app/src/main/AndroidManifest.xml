@@ -24,7 +24,7 @@
             android:name=".detail_makanan"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".ui.login.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".login"

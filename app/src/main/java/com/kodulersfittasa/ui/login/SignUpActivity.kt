@@ -1,4 +1,4 @@
-package com.kodulersfittasa
+package com.kodulersfittasa.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,11 +9,12 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.auth
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.kodulersfittasa.databinding.ActivityLoginBinding
+import com.kodulersfittasa.R
 import com.kodulersfittasa.databinding.ActivitySignUpBinding
+import com.kodulersfittasa.home
+import com.kodulersfittasa.login
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -56,7 +57,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext,"confirm password is required",Toast.LENGTH_SHORT).show()
             }
 
-            if (!password.equals(confirmPassword)){
+            if (password != confirmPassword){
                 Toast.makeText(applicationContext,"password not match",Toast.LENGTH_SHORT).show()
             }
             registerUser(userName,email,password)
@@ -76,7 +77,7 @@ class SignUpActivity : AppCompatActivity() {
     // membuat function registerUser
     private fun registerUser(userName: String, email: String, password: String){
         auth.createUserWithEmailAndPassword(email,password)
-            .addOnCompleteListener(this){
+            .addOnCompleteListener(this){ it ->
                 if (it.isSuccessful){
                     val user: FirebaseUser? = auth.currentUser
                     val userId:String = user!!.uid
@@ -87,9 +88,9 @@ class SignUpActivity : AppCompatActivity() {
                     databaseReference = FirebaseDatabase.getInstance().getReference("Users").child(userId)
 
                     val hashMap:HashMap<String,String> = HashMap()
-                    hashMap.put("userId",userId)
-                    hashMap.put("userName",userName)
-                    hashMap.put("profileImage","")
+                    hashMap["userId"] = userId
+                    hashMap["userName"] = userName
+                    hashMap["profileImage"] = ""
 
                     databaseReference.setValue(hashMap).addOnCompleteListener(this){
                         if (it.isSuccessful){

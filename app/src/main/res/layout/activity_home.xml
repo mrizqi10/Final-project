@@ -30,9 +30,8 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp"
         tools:ignore="MissingConstraints"
         />
 
@@ -44,8 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        app:clickable="true"
-        app:onClick="onMenuClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconmenu" />
@@ -257,7 +254,7 @@
                     android:id="@+id/image3"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:src="@drawable/age"
+                    android:src="@drawable/image2"
                     android:layout_marginTop="15dp"/>
 
                 <TextView

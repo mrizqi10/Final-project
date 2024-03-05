@@ -4,8 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kodulersfittasa.databinding.ActivityBeforeRegisterBinding
-import com.kodulersfittasa.databinding.Onboarding2Binding
-import kotlin.math.sign
+import com.kodulersfittasa.ui.login.SignUpActivity
 
 class before_register : AppCompatActivity() {
 
@@ -21,7 +20,7 @@ class before_register : AppCompatActivity() {
         }
 
         binding.buttonSignIn.setOnClickListener{
-            startActivity(Intent(this,SignUpActivity::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))
         }
 
     }
